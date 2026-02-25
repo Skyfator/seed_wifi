@@ -1,0 +1,9 @@
+[Interface]
+PrivateKey = YOUR_PRIVATE_KEY_HERE
+Address = 100.64.100.22/24
+
+[Peer]
+PublicKey = PEER_PUBLIC_KEY_HERE
+AllowedIPs = 100.64.100.0/24
+Endpoint = wg.example.com:51820
+PersistentKeepalive = 25

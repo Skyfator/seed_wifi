@@ -31,7 +31,11 @@ const int  END_US     = US_MIN + (int)(30.0 * 2000.0 / 180.0);  // 30° pressed
 const unsigned long SWEEP_MS  = 3000;   // smooth press duration
 const unsigned long HOLD_MS   = 11000;  // hold for force-off
 
-// ### WiFi / WireGuard config — override with -D compiler flags
+// ### WiFi / WireGuard config — override via secrets.h or -D compiler flags
+
+#if __has_include("secrets.h")
+  #include "secrets.h"
+#endif
 
 #ifndef WIFI_SSID
   #define WIFI_SSID "essid"

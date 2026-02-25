@@ -20,8 +20,7 @@ The ESP32S3 sits inside a 3D-printed enclosure physically mounted over the Mac M
 
 - Seeed XIAO ESP32S3
 - 180° servo on pin **D10**
-- Servo wired: signal → D10, VCC → 5V, GND → GND
-- USB-C into Mac Mini (shows up as a USB keyboard)
+- USB-C cable
 
 ---
 
@@ -81,8 +80,8 @@ arduino-cli upload -p /dev/ttyACM0 --fqbn esp32:esp32:XIAO_ESP32S3 seed_wifi/
 Adjust these constants at the top of `seed_wifi.ino` to match your physical mounting:
 
 ```cpp
-const int START_US = ...;              // resting position (not touching button)
-const int END_US   = ...;              // fully pressed position
+const int START_US = ...;              // resting position (move the servo arm where its touching the brace on the model (7°by default, edit if nescesarry)
+const int END_US   = ...;              // fully pressed position (30°by default, edit if nescesarry)
 const unsigned long SWEEP_MS = 3000;  // how long the press movement takes
 const unsigned long HOLD_MS  = 11000; // how long to hold for force-off
 ```

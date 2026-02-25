@@ -1,0 +1,3 @@
+[submodule "lib/WireGuard-ESP32"]
+	path = lib/WireGuard-ESP32
+	url = https://github.com/robhany/WireGuard-ESP32-Arduino

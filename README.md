@@ -19,7 +19,9 @@ The ESP32S3 sits inside a 3D-printed enclosure physically mounted over the Mac M
 ## Hardware
 
 - Seeed XIAO ESP32S3
-- 180° servo on pin **D10**
+- Generic UFL dual band antenna
+- SG90 180° servo on pin **D10**
+- 3D-printed enclosure ([STL files](stl/))
 - USB-C cable
 
 ---

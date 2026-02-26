@@ -119,6 +119,12 @@ Permanent fix: `sudo usermod -a -G dialout $USER` (requires logout/login)
 
 ---
 
+## Known issue: power loss on shutdown
+
+When the Mac Mini shuts down, its USB ports lose power — taking the ESP32 with it, making remote power-on impossible. Fix with either a small LiPo on the JST battery connector, or an always-on external USB power source (e.g. via a smart plug with the Mac's "auto power on after power failure" setting enabled).
+
+---
+
 ## Security
 
 This device can type anything on the computer it's plugged into. Treat it like root access. Keep the WireGuard private key secret and always set an `HTTP_AUTH_TOKEN`.

@@ -82,8 +82,8 @@ Adjust these constants at the top of `seed_wifi.ino` to match your physical moun
 ```cpp
 const int START_US = ...;              // resting position (move the servo arm where its touching the brace on the model (7°by default, edit if nescesarry)
 const int END_US   = ...;              // fully pressed position (30°by default, edit if nescesarry)
-const unsigned long SWEEP_MS = 3000;  // how long the press movement takes
-const unsigned long HOLD_MS  = 11000; // how long to hold for force-off
+const unsigned long SWEEP_MS = 3000;  // how long the press (on) movement takes
+const unsigned long HOLD_MS  = 11000; // how long to hold until moving back to the resting position - used for turning the mac mini off)
 ```
 
 ---
@@ -102,7 +102,7 @@ Add the device as a peer on your WireGuard server, then pass the keys as build f
 
 ## Upload procedure (Linux)
 
-1. Hold **BOOT**, press **RESET**, release **RESET**, release **BOOT**
+1. On your ESP32, hold **BOOT**, tap **RESET**, release **BOOT**
 2. `sudo chmod a+rw /dev/ttyACM0`
 3. Run the upload command above
 4. Press **RESET** to boot into the new firmware

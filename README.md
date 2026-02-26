@@ -1,5 +1,7 @@
 # seed_wifi
 
+![Main](pictures/Main.png)
+
 Remote Mac Mini power control and keyboard input via ESP32S3 over WireGuard VPN.
 
 Fork of [phokz/seed_wifi](https://github.com/phokz/seed_wifi).
@@ -21,8 +23,12 @@ The ESP32S3 sits inside a 3D-printed enclosure physically mounted over the Mac M
 - Seeed XIAO ESP32S3
 - Generic UFL dual band antenna
 - SG90 180° servo on pin **D10**
-- 3D-printed enclosure ([STL files](stl/))
+- 3D-printed enclosure ([MiniMacBay.stl](stl/MiniMacBay.stl)) — Fusion 360 source: [Bay-fusion project.f3z](stl/Bay-fusion%20project.f3z)
 - USB-C cable
+
+| | |
+|---|---|
+| ![Back](pictures/Back.jpg) | ![Inside](pictures/insideview.jpg) |
 
 ---
 

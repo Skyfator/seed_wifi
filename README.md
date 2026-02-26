@@ -23,7 +23,7 @@ The ESP32S3 sits inside a 3D-printed enclosure physically mounted over the Mac M
 - Seeed XIAO ESP32S3
 - Generic UFL dual band antenna
 - SG90 180° servo on pin **D10**
-- 3D-printed enclosure ([MiniMacBay.stl](stl/MiniMacBay.stl)) — Fusion 360 source: [Bay-fusion project.f3z](stl/Bay-fusion%20project.f3z)
+- 3D-printed enclosure ([MiniMacBay.stl](stl/MiniMacBay.stl)) — also available as [STEP](stl/bay.step) — Fusion 360 source: [Bay-fusion project.f3z](stl/Bay-fusion%20project.f3z)
 - USB-C cable
 
 | | |
